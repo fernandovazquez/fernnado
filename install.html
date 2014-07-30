@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Responsive Page</title>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+
+
+</head>
+
+<body>
+<div id="install">Estado de la instalación de la pagina  v.1.0</div>    
+    <script>
+    $(document).ready(function(){
+    var nombreManifiesto = location.href.replace("install.html","") + 'manifest.webapp';
+        
+        var request = navigator.mozApps.checkInstalled(nombreManifiesto);
+        
+        request.onsuccess=function(){
+        if (request.result){
+        //la app ya fue instalada
+            $('#install').text('La app ya está instalada');
+        
+        }
+            else{
+            // la app no está instalada
+                $('#install').html("<input type='button' value='Instalar APP aplicacion'>");
+                
+            $('#install').click(function(){
+                        var req = navigator.mozApps.install(nombreManifiesto);
+                req.onsuccess= function(data){
+                $('#install').text("La app ha sido instalada").unbind('click');
+                }
+                req.onerror=function(errObj){
+                alert("Error de la instalación:" + this.error.name);
+                }
+                                
+                                });
+                
+            }
+        }
+        
+        request.onerror = function(){
+        
+        alert('Error comprobando estado de la instalación:'+ this.error.message)
+        }
+        
+    });
+</script>
+	</body>
+	</html>

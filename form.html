@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario de Acceso</title>
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+
+<!--Scripts-->
+
+ <script language="javascript" type="text/javascript">
+ 
+ function validaform(contacto){//Utilizamos la palabra reservada function y un nombre para la misma XD
+	 
+	 if(document.contacto.Nombre.value.length==""){//Si la longitud de los valores es ="" vacio entonces mandara una alerta
+		 alert("El campo nombre está vacio");
+		   document.contacto.Nombre.focus();//La instruccion focus sirve para redireccionar a dixho camposi este no se la a asignado un valor 
+		 	 
+	 return false;}
+	 
+	 
+	 else
+	 
+	  if(document.contacto.Apellido.value.length==""){//Si la longitud de los valores es ="" vacio entonces mandara una alerta
+		 alert("El apellido está vacio");
+		   document.contacto.Apellido.focus();//La instruccion focus sirve para redireccionar a dixho camposi este no se la a asignado un valor 
+		 	 
+	 return false;}
+	 
+	 
+	 else
+	 
+	  if(document.contacto.Direccion.value.length==""){//Si la longitud de los valores es ="" vacio entonces mandara una alerta
+		 alert("La direccion está vacia");
+		   document.contacto.Direccion.focus();//La instruccion focus sirve para redireccionar a dixho camposi este no se la a asignado un valor 
+		 	 
+	 return false;}
+	 
+	 else
+	 
+	  if(document.contacto.Telefono.value.length==""){//Si la longitud de los valores es ="" vacio entonces mandara una alerta
+		 alert("El telefono está vacio");
+		   document.contacto.Telefono.focus();//La instruccion focus sirve para redireccionar a dixho camposi este no se la a asignado un valor 
+		 	 
+	 return false;}
+	 
+	 	 
+	 else
+	 
+	 if(document.contacto.Codigo.value.length==""){//Si la longitud de los valores es ="" vacio entonces mandara una alerta
+		 alert("El codigo postal está vacio");
+		   document.contacto.Codigo.focus();//La instruccion focus sirve para redireccionar a dixho camposi este no se la a asignado un valor 
+		 	 
+	 return false;}
+	 
+	 	 
+	 else
+	 
+	 
+	  if(document.contacto.comentarios.value.length<=4){
+		 alert ("El comentario es muy corto");
+		 document.contacto.comentarios.focus();
+		 return false;}
+		 
+		 else
+		 
+		 if(document.contacto.opcion1.value.length==""){
+			 alert("Señala un recuadro en el area ¿ que es lo que mas te ha gustado?");
+			 return false;}
+			 
+			 else
+			  if(document.contacto.e_mail.value.length==""){
+				  alert("Faltó incluir tu e-mail");
+				  document.contacto.e_mail.focus();
+				  return false;}
+				  else
+				  return true;
+ }
+ </script>
+
+
+</head>
+
+<body>
+<center><h1>Encuesta de Satisfaccion a Usuarios del Sitio</h1></center>
+
+
+<!--en la opcion mailito el email que introduzcamos es el que recibira la informacion de los usuarios XD-->
+<form method="post"  id="contacto" name="contacto" action="mailto:hardwell_jumper@hotmail.com" onsubmit="return validaform()" enctype="text/plain">
+
+<p>Nombre:&nbsp;<input type="text" name="Nombre"/></p>
+
+<p>Apellidos:&nbsp;<input type="text" name="Apellido"/></p>
+
+<p>Dirección:&nbsp;<input type="text" name="Direccion"/></p>
+
+<p>Telefono:&nbsp;<input type="tel" name="Telefono"/></p>
+
+<p>Codigo Postal:&nbsp;<input type="text" name="Codigo"/></p>
+<!--Botones para las opciones opciones-->
+
+<p> ¿Como te parece mi sitio web? Selecciona una respuesta:</p>
+
+<input name="nota" type="radio" value="1" />1 (No es muy interesante)<br/><br/>
+<input name="nota" type="radio" value="2" />2 (Regular)<br/><br/>
+<input name="nota" type="radio" value="3" />3 (Bueno)<br /><br/>
+<input name="nota" type="radio" value="4" />4 (Más que bueno)<br/><br/>
+<input name="nota" type="radio" value="5" />5 (Realmente interesante!)<br/><br/>
+
+<!--Casillas de verificacion-->
+
+<p> ¿Que es lo que mas te ha gustado? <br />
+<input name="opcion1" type="checkbox" value="Todo el site"/> ¡Todo el contenido! <br/><br/>
+<input name="opcion2" type="checkbox" value="El tema"/> El Tema<br /><br/>
+<input name="opcion3" type="checkbox" value="El color"/>La eleccion de colores<br/><br/>
+<input name="opcion4" type="checkbox" value="Diseño"/> El Diseño<br /><br/>
+<input name="opcion5" type="checkbox" value="Humor"/> Tu humor</p>
+
+<!--Campo de texto-->
+
+<p> ¿Algo que desee comentar?</p>
+
+<textarea rows="5" cols="30" name="comentarios"/>
+</textarea>
+
+<p> ¿Cuál es tu direccion de e-mail? </p>
+
+<input type="text" name="e_mail"/></p>
+
+<p><button type="submit"> Enviar el formulario por e-mail</button>&nbsp;&nbsp;
+<button type="reset"> Cancelar</button></p>
+</form>
+
+<br /><br /><br />
+
+ <center><p>
+    
+    <a href="index.html">Pagina Principal</a>
+    
+    </p></center>
+
+
+
+
+</body>
+</html>

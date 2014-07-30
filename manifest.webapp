@@ -1,0 +1,27 @@
+{
+"version": "1.0",
+"name": "responsivo",
+"description": "page",
+"launch_path": "/host/0B5HzGlyvp3nqdUdlY0tMSjZfbk0/index.html",
+
+"icons":{
+"16":  "/host/0B5HzGlyvp3nqdUdlY0tMSjZfbk0/imagenes/ico_16.png",
+"48":  "/host/0B5HzGlyvp3nqdUdlY0tMSjZfbk0/imagenes/ico_48.png",
+"128": "/host/0B5HzGlyvp3nqdUdlY0tMSjZfbk0/imagenes/ico_128.png"
+},
+
+"developer": {
+"name": "Fernando Esquivel",
+"url":"www.car-must.com"
+}
+
+
+}
+
+
+
+
+
+
+
+

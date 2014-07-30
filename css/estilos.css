@@ -1,0 +1,381 @@
+﻿@charset "utf-8";
+header, nav, section, article, aside, figure, footer{
+	display:block;
+}
+a img{
+	border:none;
+}
+.limpiar{
+	clear:both;
+}
+body{
+	background:#007FFF;
+	margin:30px;
+}
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+	margin:6px;
+}
+h1{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#333;
+	margin:6px;
+}
+/*--- Maquetacion ---*/
+#contenedor{
+	width:950px;
+	margin:0 auto;
+	background:#FFF;
+	padding:25px;
+}
+/*-- Cabecera ---*/
+#cabecera{
+	height:84px;
+}
+#logo{
+	width:351px;
+	height:84px;
+	float:left;
+}
+#cabecera ul{
+	width:120px;
+	height:64px;
+	display:block;
+	float:right;
+	padding:0;
+	margin:0;
+	list-style:none;
+	padding-top:20px;
+}
+#cabecera ul li{
+	float:right;
+}
+#cabecera li a{
+	width:45px;
+	height:45px;
+	display:block;
+	float:right;
+	margin-left:10px;
+}
+/*--- Menu ---*/
+#menu{
+	height:80px;
+	border-bottom:4px solid #FF2F04;
+}
+#menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:474px;
+	height:60px;
+	display:block;
+	background:#FF2F04;
+	float:right;
+	padding-top:20px;
+}
+#menu li{
+	float:left;
+}
+#menu li a{
+	line-height:40px;
+	display:block;
+	padding:0 25px;
+	border-right:4px solid #FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#FFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+#menu li a:hover{
+	color:#000;
+}
+/*--- Cuerpo ----*/
+.titulopagina{
+	display:block;
+	font-size:30px;
+	color:#6D6D6D;
+}
+.cajas{
+	border-bottom:5px solid #FF2F04;
+	padding:10px 0;
+}
+#cajapresentacion{
+	width:470px;
+	float:left;
+}
+#cajapresentacion h1{
+	 font-size:43px;
+	 color:#FF3005;
+	 font-weight:normal;
+}
+#banner{
+	width:440px;
+	float:right;
+}
+/*--- Proyecto ---*/
+.caja-proyectos{
+	width:200px;
+	float:left;
+	border-top:1px solid #FF2F04;
+	padding-top:16px;
+	margin-right:50px;
+}
+.caja-proyectos h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#464646;
+	margin:6px;
+}
+.caja-proyectos a{
+	color:#848484;
+	text-decoration:none;
+}
+/*-- Servicios ----*/
+.caja-servicios{
+	width:270px;
+	float:left;
+	margin-right:68px;
+	margin-bottom:20px;
+	border-top:1px solid #FF2F04;
+}
+.caja-servicios-sm{
+	width:270px;
+	float:left;
+	margin-right:0;
+	margin-bottom:20px;
+	border-top:1px solid #FF2F04;
+}
+.caja-servicios h2, .caja-servicios-sm h2{
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:14px;
+	 color:#727272;
+	 margin:15px 6px 6px 6px;
+}
+/*--- Pie pagina ---*/
+#piepagina{
+	height:80px;
+	border-top:5px solid #FF2F04;
+}
+#piepagina .menupie{
+	width:474px;
+	height:60px;
+	display:block;
+	background:#FF2F04;
+	float:left;
+	margin:0;
+	padding:0;
+	list-style:none;
+	padding-top:20px;
+}
+#piepagina .menupie li{
+	float:left;
+}
+#piepagina .menupie li a{
+	line-height:40px;
+	display:block;
+	padding:0 25px;
+	border-right:4px solid #FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+#piepagina .menupie li a:hover{
+	color:#000;
+}
+#piepagina .socialespie{
+	width:120px;
+	display:block;
+	float:right;
+	margin:0;
+	padding:0;
+	list-style:none;
+	padding-top:10px;
+}
+#piepagina .socialespie li{
+	float:right;
+}
+#piepagina .socialespie li a{
+	width:45px;
+	height:45px;
+	display:block;
+	float:right;
+	margin-left:6px;
+}
+
+
+@media only screen and (max-width:768px){
+	body{
+		margin:15px;
+	}
+	/*--- Maquetacion ---*/
+	#contenedor{
+		width:96%;
+		padding:2%;
+	}
+	/*-- Cabecera ---*/
+	#cabecera{
+		height:auto;
+	}
+	#logo{
+		width:100%;
+		height:auto;
+		float:none;
+	}
+	#cabecera ul{
+		display:none;
+	}
+	/*--- Menu ---*/
+	#menu ul{
+		float:none;
+		margin:0 auto;
+	}
+	/*--- cuerpo ---*/
+	#cajapresentacion{
+		width:100%;
+		float:none;
+	}
+	#cajapresentacion h1{
+		 font-size:33px;	
+	}
+	#banner{
+		width:100%;
+		float:none;
+	}
+	/*--- servicios ---*/
+	.caja-servicios-sm{
+		width:270px;
+		float:left;
+		margin-right:68px;
+		margin-bottom:20px;
+		border-top:1px solid #FF2F04;
+	}
+	/*--- Pie pagina ---*/
+	#piepagina{
+		height:auto;
+	}
+	#piepagina .menupie{
+		float:none;
+		margin:0 auto;
+	}
+	#piepagina .socialespie{
+		width:120px;
+		height:45px;
+		display:block;
+		float:none;
+		margin:0 auto;
+		padding:0;
+		list-style:none;
+		padding-top:10px;
+	}
+	
+	
+}
+
+
+@media only screen and (max-width:480px){
+	body{
+		margin:8px;
+	}
+	/*--- Maquetacion ---*/
+	#contenedor{
+		width:98%;
+		padding:1%;
+	}
+	/*--- Menu ---*/
+	#menu{
+		height:auto;
+		border-bottom:none;
+	}
+	#menu ul{
+		width:100%;
+		height:auto;
+		background:none;
+		float:none;
+		padding-top:0;
+	}
+	#menu li{
+		float:none;
+	}
+	#menu li a{
+		line-height:30px;
+		display:block;
+		background:#FF2F04;
+		padding:0;
+		text-align:center;
+		border-right:none;
+		font-size:13px;
+		margin-bottom:4px;
+	}
+	/*--- Cuerpo ----*/
+	#banner img{
+		width:100%;
+		height:auto;
+	}
+	/*-- pie pagina ---*/
+	#piepagina .menupie{
+		width:100%;
+		height:auto;
+		background:none;
+		float:none;
+		padding-top:0;
+	}
+	#piepagina .menupie li{
+		float:none;
+	}
+	#piepagina .menupie li a{
+		line-height:30px;
+		padding:0;
+		background:#FF2F04;;
+		border-right:none;
+		font-size:13px;
+		margin-bottom:4px;
+		text-align:center;
+	}
+	
+}
+
+
+
+@media only screen and (max-width:320px){
+	#logo img{
+		width:60%;
+		height:auto;
+	}
+	
+}
+
+@media only screen and (max-width:240px){
+	body{
+		margin:5px;
+	}
+	#cajapresentacion h1{
+		 font-size:20px;	
+	}
+	.cajas{
+		padding:4px 0;
+	}
+	/*--- Proyecto ---*/
+	.caja-proyectos{
+		width:100%;
+	}
+	.caja-proyectos img{
+		width:100%;
+		height:auto;
+	}
+	/*--- servicios ---*/
+	.caja-servicios, .caja-servicios-sm{
+		width:100%;
+	}
+	
+	.caja-servicios img, .caja-servicios-sm img{
+		width:100%;
+		height:auto;
+	}
+	
+}
